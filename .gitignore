@@ -1,0 +1,20 @@
+# Сборка
+build/
+*.elf
+*.map
+# Личные настройки консоли - никогда не публиковать
+crokos.ini
+.crokos.cfg
+*_key.txt
+# Android
+.gradle/
+local.properties
+.idea/
+*.iml
+app/CrokPocketApp/app/build/
+*.apk
+*.keystore
+*.jks
+# Системные
+.DS_Store
+Thumbs.db

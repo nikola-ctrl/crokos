@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Значок: карманная консоль с экраном и крестовиной -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#1E1F24" android:pathData="M0,0h108v108h-108z" />
+    <path android:fillColor="#FF9900" android:pathData="M30,18h48a8,8 0 0 1 8,8v56a8,8 0 0 1 -8,8h-48a8,8 0 0 1 -8,-8v-56a8,8 0 0 1 8,-8z" />
+    <path android:fillColor="#1E1F24" android:pathData="M32,26h44v30h-44z" />
+    <path android:fillColor="#7FD1FF" android:pathData="M36,30h36v22h-36z" />
+    <path android:fillColor="#1E1F24" android:pathData="M38,64h6v6h6v6h-6v6h-6v-6h-6v-6h6z" />
+    <path android:fillColor="#1E1F24" android:pathData="M70,70m-4,0a4,4 0 1 1 8,0a4,4 0 1 1 -8,0" />
+    <path android:fillColor="#1E1F24" android:pathData="M62,77m-4,0a4,4 0 1 1 8,0a4,4 0 1 1 -8,0" />
+</vector>

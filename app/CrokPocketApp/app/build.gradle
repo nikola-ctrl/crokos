@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'ru.crokpocket.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'ru.crokpocket.app'
+        minSdk 29          // Android 10+: подключение к Wi-Fi приставки через WifiNetworkSpecifier
+        targetSdk 34       // Android 14
+        versionCode 6
+        versionName '1.4.1'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // подпись отладочным ключом, чтобы release-APK сразу ставился на телефон
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+// Библиотек не нужно: приложение использует только стандартные API Android
+dependencies {
+}

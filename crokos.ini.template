@@ -1,0 +1,56 @@
+# Настройки CrokPocket (CrokOS)
+# Впишите значения после знака "=", сохраните файл и положите его в корень SD-карты.
+# Консоль читает файл при включении и при открытии Gemini. Пустые строки не меняют настройки.
+# Строки, начинающиеся с #, - комментарии.
+
+# ---- Wi-Fi (домашняя сеть или точка доступа телефона) ----
+wifi_ssid=
+wifi_password=
+
+# ---- Какая нейросеть ----
+#   gemini     - Google Gemini (из России - через свой сервер или прокси, лимиты бесплатного ключа)
+#   openrouter - OpenRouter (openrouter.ai), бесплатные модели (из России - через свой сервер)
+#   api        - свой OpenAI-совместимый сервис (UnoRouter и подобные), адрес в api_url
+provider=api
+
+# ---- Свой сервис (provider=api), по умолчанию UnoRouter ----
+api_url=https://api.unorouter.com/v1
+api_key=
+# Модели: точные названия можно выбрать в консоли: Нейросеть -> START -> Модель -> «Список моделей с сервера»
+api_model=qwen3.8-27b:free
+api_fallback=kimi-k3:free
+
+# ---- OpenRouter ----
+# Ключ с openrouter.ai/keys (начинается с sk-or-)
+openrouter_key=
+# Основная модель (бесплатные оканчиваются на :free)
+openrouter_model=google/gemma-4-31b-it:free
+# Запасная: openrouter/free - OpenRouter сам выберет любую свободную бесплатную модель
+openrouter_fallback=openrouter/free
+
+# ---- Ключ Gemini API (из aistudio.google.com, начинается с AQ. или AIza) ----
+gemini_key=
+
+# ---- Как подключаться ----
+#   direct - напрямую через роутер или телефон. UnoRouter так работает, Gemini и OpenRouter из России - нет
+#   relay  - через свой сервер (VPN-сервер с Xray/3x-ui): адрес в строке relay. Работает для всех нейросетей.
+#            Шифрование сквозное: сервер не видит ни вопросов, ни ключа
+#   proxy  - через прокси на Cloudflare Workers (только Gemini), адрес в строке proxy
+#   dns    - напрямую, но со своими DNS-серверами из строки dns
+mode=direct
+
+# Адрес своего сервера для режима relay: IP или домен и порт, например 203.0.113.5:8443
+relay=
+
+# Адрес прокси для режима proxy, например https://имя.аккаунт.workers.dev
+proxy=
+
+# DNS-серверы для режима dns, через запятую
+dns=
+
+# ---- Модель ----
+model=gemini-3.8-flash
+
+# Запасная модель: если основная перегружена (ошибка 503), консоль спросит её.
+# Чтобы отключить, напишите: fallback_model=none
+fallback_model=gemini-3.5-flash-lite

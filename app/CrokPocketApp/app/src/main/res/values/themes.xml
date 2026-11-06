@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Тема как у веб-страницы приставки (192.168.4.1): тёмный фон, оранжевый акцент -->
+<resources>
+    <color name="crok_bg">#FF111111</color>
+    <color name="crok_panel">#FF222222</color>
+    <color name="crok_btn">#FF333333</color>
+    <color name="crok_text">#FFDDDDDD</color>
+    <color name="crok_dim">#FF888888</color>
+    <color name="crok_accent">#FFFF9900</color>
+
+    <style name="CrokTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/crok_bg</item>
+        <item name="android:colorBackground">@color/crok_bg</item>
+        <item name="android:colorPrimary">@color/crok_panel</item>
+        <item name="android:colorPrimaryDark">@color/crok_panel</item>
+        <item name="android:colorAccent">@color/crok_accent</item>
+        <item name="android:colorControlNormal">@color/crok_dim</item>
+        <item name="android:colorControlActivated">@color/crok_accent</item>
+        <item name="android:textColorPrimary">@color/crok_text</item>
+        <item name="android:textColorSecondary">@color/crok_dim</item>
+        <item name="android:textColorHint">#FF666666</item>
+        <item name="android:statusBarColor">@color/crok_panel</item>
+        <item name="android:navigationBarColor">@color/crok_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:alertDialogTheme">@style/CrokDialog</item>
+    </style>
+
+    <style name="CrokDialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorBackground">@color/crok_panel</item>
+        <item name="android:colorAccent">@color/crok_accent</item>
+        <item name="android:colorControlNormal">@color/crok_dim</item>
+        <item name="android:colorControlActivated">@color/crok_accent</item>
+        <item name="android:textColorPrimary">@color/crok_text</item>
+        <item name="android:textColorSecondary">#FFBBBBBB</item>
+    </style>
+</resources>
